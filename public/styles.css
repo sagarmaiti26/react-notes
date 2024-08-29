@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #cac2c0;
+  padding: 0 16px;
+  background-image: url("https://transparenttextures.com/patterns/beige-paper.png");
+}
+
+header {
+  background-color: #3d5257;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #eee;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  text-decoration: underline solid #eee 3px;
+}
+
+main {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: sticky;
+  width: 96vw;
+  height: 2.5rem;
+  top: 90%;
+  left: 0;
+  bottom: 0;
+  margin: 1rem;
+}
+
+footer p {
+  color: #3d5257;
+}
+
+.note {
+  background: #eee;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 230px;
+  margin: 10px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.4em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: block;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description-color {
+  color: #838756;
+}
+.title-color {
+  color: #2d373a;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 1px;
+  color: #4d686e;
+  border: none;
+  width: 50px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+}
+
+form.create-note {
+  position: relative;
+  width: 70vw;
+  margin: 30px auto 20px auto;
+  background: #eee;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+@media (max-width: 1006px) {
+  .note {
+    float: center;
+    width: 75vw;
+  }
+  form.create-note {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1007px) {
+  form.create-note {
+    width: 600px;
+  }
+  .note {
+    width: 290px;
+  }
+}
+
+form.create-note {
+  width: 100%;
+  background: #eee;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea {
+  background: #eee;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 1em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  margin-right: 1rem;
+  display: inline-block;
+  background: #4d686e;
+  color: #fff;
+  border: none;
+  border-radius: 4px; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+}
+
+form.create-note button[disabled] {
+  background: lightgray;
+}
+
+.no-border {
+  border: none;
+}
+.headerStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.containerStyle {
+  text-align: center;
+}
+
+.buttonStyle {
+  margin-top: 10px;
+}
+
+.note-modal .modal-dialog {
+  max-width: 70vw; 
+}
+
+.note-modal .modal-content {
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  background: #eee;
+}
+
+.note-modal .modal-body {
+  padding: 15px; 
+}
+
+.note-modal .modal-footer {
+  padding: 10px 15px; 
+}
